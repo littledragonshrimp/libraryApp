@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Library</h1>
+
+            <button id='newBtn'>Add New Book</button>
+
+         <div id="popUp">
+            <form id='newBtnForm'>
+                <label>New Book</label>
+                <ul id='textInput'> 
+                    <li><input type='text' id='title' name='title' placeholder='Title'></li>
+                    <li><input type='text' id='author' name='author' placeholder='Author'></li>
+                    <li><input type='number' id='pages' name='pages' placeholder='Pages'></li>
+                
+                </ul>
+
+                <div id='checkBox'>
+                    <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+                </div>
+                
+            </form>
+            <div id="updateBtnContainer">
+                <button id="updateBtn">Update!</button>
+            </div>
+     </div>
+
+    <div id='book-list'></div>
+
+    </main>
+    <script src="actions.js"></script>
+</body>
+</html>
